@@ -1,11 +1,10 @@
 name: Build
 
 on:
-  workflow_dispatch:
+  push:
     paths-ignore:
       - '.github/**'
       - '!.github/workflows/build.yml'
-      - 'README.md'
       - 'ubuntu-win64-cross/**'
   pull_request:
     paths-ignore:
